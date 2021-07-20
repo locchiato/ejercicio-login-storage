@@ -27,7 +27,7 @@ const baseDeDatos = {
     ],
 };
 
-if (localStorage.getItem("usuario"))
+if (localStorage.getItem("user-name"))
     window.location.href = "/bienvenida.html";
 
 window.onload = () => {
@@ -51,7 +51,8 @@ window.onload = () => {
 
             if (user) {
                 window.location.href = "/bienvenida.html";
-                localStorage.setItem("usuario", JSON.stringify(user));
+                localStorage.setItem("user-name", user.name);
+                localStorage.setItem("user-email", user.email);
             } else {
                 error.innerHTML = `<small>Alguno de los datos ingresados son incorrectos</small>`;
             }
