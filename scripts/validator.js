@@ -50,7 +50,7 @@ window.onload = () => {
             const user = buscarUsuario();
 
             if (user) {
-                window.location.href = "/bienvenida.html";
+                window.location.href = "bienvenida.html";
                 localStorage.setItem("user-name", user.name);
                 localStorage.setItem("user-email", user.email);
             } else {
