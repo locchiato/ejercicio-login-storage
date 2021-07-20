@@ -7,7 +7,7 @@ window.addEventListener("load", function() {
     const btnLogout = document.querySelector("#logout-btn");
     const titulo = document.querySelector('h1');
 
-    titulo.textContent = `Bienvenido al sitio ${name} `;
+    titulo.textContent = `Bienvenido al sitio ${name} ☺☼☻♪♫`;
 
     btnLogout.addEventListener("click", function() {
         localStorage.clear();
